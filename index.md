@@ -5,12 +5,13 @@ cd:
 [user@sahara ~]$
 ```
 I got a blank output (nothing happened) since `cd` with no argument just leaves you in the same directory. This is not an error. <br>
+
 2. With a path to a directory as an argument:
 ```
 [user@sahara ~]$ cd lecture1
 [user@sahara ~/lecture1]$
 ```
-You can see that the working directory changed because `cd` moved me to the `lecture` directory. This is not an error.
+You can see that the working directory changed because `cd` moved me to the `lecture` directory. This is not an error. <br>
 
 3. With a path to a file as an argument:
 ```
@@ -27,7 +28,7 @@ ls:
 lecture1
 [user@sahara ~]$
 ```
-The output is all the subdirectories and files in the current directory. This is not an error.
+The output is all the subdirectories and files in the current directory. This is not an error. <br>
 
 2. With a path to a directory as an argument:
 ```
@@ -35,7 +36,7 @@ The output is all the subdirectories and files in the current directory. This is
 Hello.class  Hello.java  messages  README
 [user@sahara ~]$
 ```
-The output is all the subdirectories and files in the `lecture1` directory since the argument indicates that it should run the command in that directory. This is not an error.
+The output is all the subdirectories and files in the `lecture1` directory since the argument indicates that it should run the command in that directory. This is not an error. <br>
 
 3. With a path to a file as an argument:
 ```
@@ -43,7 +44,7 @@ The output is all the subdirectories and files in the `lecture1` directory since
 Hello.java
 [user@sahara ~/lecture1]$
 ```
-The output this time is simply the file name because the only file in the path of the file is that file. This is not an error.
+The output this time is simply the file name because the only file in the path of the file is that file. This is not an error. <br>
 
 cat:
 1. With no arguments:
@@ -54,7 +55,7 @@ Some input
 ^C
 [user@sahara ~/lecture1]$
 ```
-With no argument, the `cat` argument simply defaults to `stdin`. When I entered "Some input" it just returned that back to me. This is not an error.
+With no argument, the `cat` argument simply defaults to `stdin`. When I entered "Some input" it just returned that back to me. This is not an error. <br>
 
 2. With a path to a directory as an argument:
 ```
@@ -62,7 +63,7 @@ With no argument, the `cat` argument simply defaults to `stdin`. When I entered 
 cat: lecture1: Is a directory
 [user@sahara ~]$ 
 ```
-The output is an error telling me that `lecture1` is a directory, which `cat` can't be used on.
+The output is an error telling me that `lecture1` is a directory, which `cat` can't be used on. <br>
 
 3. With a path to a file as an argument:
 ```[user@sahara ~/lecture1]$ cat Hello.java
