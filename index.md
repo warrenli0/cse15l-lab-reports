@@ -66,6 +66,7 @@ cat: lecture1: Is a directory
 The output is an error telling me that `lecture1` is a directory, which `cat` can't be used on. <br>
 
 3. With a path to a file as an argument:
+
 ```
 [user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
@@ -79,6 +80,5 @@ public class Hello {
     System.out.println(content);
   }
 }[user@sahara ~/lecture1]$
-
-
+```
 The output is simply the contents of the `Hello.java` file which is the intended behavior of `cat` when used on a file. This is not an error. <br>
