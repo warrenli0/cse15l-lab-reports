@@ -80,4 +80,4 @@ public class Hello {
   }
 }[user@sahara ~/lecture1]$
 ```
-The output is simply the contents of the `Hello.java` file which is the intended behavior of `cat` when used on a file. This is not an error.
+The output is simply the contents of the `Hello.java` file which is the intended behavior of `cat` when used on a file. This is not an error. <br>
