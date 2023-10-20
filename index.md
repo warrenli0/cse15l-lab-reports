@@ -4,7 +4,7 @@ cd:
 [user@sahara ~]$ cd
 [user@sahara ~]$
 ```
-I got a blank output (nothing happened) since `cd` with no argument just leaves you in the same directory. This is not an error. \n
+I got a blank output (nothing happened) since `cd` with no argument just leaves you in the same directory. This is not an error. <br>
 2. With a path to a directory as an argument:
 ```
 [user@sahara ~]$ cd lecture1
