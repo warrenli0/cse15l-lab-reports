@@ -49,12 +49,15 @@ cat:
 Some input
 Some input
 ^C
-[user@sahara ~/lecture1]$ ```
+[user@sahara ~/lecture1]$
+```
 With no argument, the `cat` argument simply defaults to `stdin`. When I entered "Some input" it just returned that back to me. This is not an error.
 2. With a path to a directory as an argument:
-```[user@sahara ~]$ cat lecture1
+```
+[user@sahara ~]$ cat lecture1
 cat: lecture1: Is a directory
-[user@sahara ~]$ ```
+[user@sahara ~]$ 
+```
 The output is an error telling me that `lecture1` is a directory, which `cat` can't be used on.
 3. With a path to a file as an argument:
 ```[user@sahara ~/lecture1]$ cat Hello.java
