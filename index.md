@@ -66,7 +66,8 @@ cat: lecture1: Is a directory
 The output is an error telling me that `lecture1` is a directory, which `cat` can't be used on. <br>
 
 3. With a path to a file as an argument:
-```[user@sahara ~/lecture1]$ cat Hello.java
+```
+[user@sahara ~/lecture1]$ cat Hello.java
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
