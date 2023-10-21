@@ -50,13 +50,13 @@ In the screenshot, the `handleRequest` function is being called. The arguments f
 In the screenshot, the `handleRequest` function is being called. The arguments for the function is the `URI url`, which in this case was `/add-message?s=How%20are%20you`. The values in the class were at the state from the previous screenshot, and after the request, messages became `1. Hello\n 2. How are you\n` and `messageCount` became `2`.
 
 ## Part 2
-Path to private key on local computer:
+Path to private key on local computer:<br>
 <img width="628" alt="Screen Shot 2023-10-21 at 11 45 48 AM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/57ab2ce1-3425-46cc-bc0e-c2c83fafea06"><br>
 
-Path to public key on ieng6:
+Path to public key on ieng6:<br>
 <img width="324" alt="Screen Shot 2023-10-21 at 11 49 15 AM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/e26915f1-806a-4b41-8d06-d8b8855b0868"><br>
 
-No login required for ssh:
+No login required for ssh:<br>
 <img width="766" alt="Screen Shot 2023-10-21 at 11 48 07 AM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/4bb6da96-19e2-4800-a694-21d2569f0a61"><br>
 
 
