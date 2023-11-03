@@ -28,8 +28,8 @@ Input that doesn't induce a failure:
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
 ```
-Symptom:
-<img width="700" alt="Screen Shot 2023-11-03 at 4 53 12 PM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/a072400a-fb02-4920-801a-4585b01ed3e1">
+Symptom: <br/>
+<img width="700" alt="Screen Shot 2023-11-03 at 4 53 12 PM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/a072400a-fb02-4920-801a-4585b01ed3e1"><br/>
 The Bug:
 Before:
 ```
