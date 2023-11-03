@@ -1,5 +1,61 @@
 # Warren Li - CSE 15L Lab Report 3
 ## Part 1:
+Bug for the `reversed` function in the `ArrayExamples` class in `ArrayExamples.java`.
+```
+// Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+Failure inducing input:
+```
+@Test
+  public void testReversed() {
+    int[] input2 = { 1, 2, 3 };
+    assertArrayEquals(new int[]{ 3, 2, 1 }, ArrayExamples.reversed(input2));
+  }
+```
+Input that doesn't induce a failure:
+```
+@Test
+  public void testReversedPass() {
+    int[] input1 = { };
+    assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
+  }
+```
+Symptom:
+<img width="700" alt="Screen Shot 2023-11-03 at 4 53 12 PM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/a072400a-fb02-4920-801a-4585b01ed3e1">
+The Bug:
+Before:
+```
+// Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+After:
+```
+// Returns a *new* array with all the elements of the input array in reversed
+  // order
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+I changed the assignment in the for loop to write values into the `newArray` from `arr` rather than into `arr` from `newArray`. Then I would return `newArray` at the end. This fixes the bug because before, it was writing from `newArray` to `arr`. `newArray` was just an empty list so it would just overwrite `arr` as an empty list, which would be returned. By switching the direction of assignment, the bug is fixed.
 
 ## Part 2:
 I will be finding uses for the `grep` command.
