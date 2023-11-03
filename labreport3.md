@@ -119,8 +119,8 @@ I will be finding uses for the `grep` command.
      Output: empty
    This command will search through the file for strings that match the given latex, which is interesting. This allows for more complex search patterns.
 
-Source: ChatGPT
-Prompt: What are 4 different ways that I can use `grep` in command-line
+Source: ChatGPT<br/>
+Prompt: What are 4 different ways that I can use `grep` in command-line<br/>
 Output: I modified the output by taking the 4 ways that I can use `grep` and running them on the local directory.
 `grep` is a powerful command-line tool used in Unix and Unix-like operating systems for searching text using patterns. It can be used in a variety of ways to find specific patterns of text in files, output of other commands, and more. Here are four different ways you can use `grep`:
 
