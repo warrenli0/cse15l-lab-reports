@@ -8,7 +8,7 @@ I successfully logged into ieng6 using the command.
 5. Clone your fork of the repository from your Github account <br>
 `git clone git@github.com:warrenli0/lab7.git <enter>`
 <img width="566" alt="Screen Shot 2023-11-13 at 11 03 45 AM" src="https://github.com/warrenli0/cse15l-lab-reports/assets/89435196/06bf0c20-fe08-420e-93a8-0c96b635ec57"><br>
-I succesffuly cloned the respository using the command.
+I successfully cloned the respository using the command.
 
 6. Run the tests, demonstrating that they fail <br>
 `cd lab7 <enter>`
