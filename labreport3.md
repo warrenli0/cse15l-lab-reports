@@ -66,7 +66,7 @@ I will be finding uses for the `grep` command.
      In response, Jarrah immediately began to roll the airplane to the left and right, attempting to knock the passengers off balance. At 9:58:57, Jarrah told another hijacker in the cockpit to block the door. Jarrah continued to roll the airplane sharply left and right, but the assault continued. At 9:59:52, Jarrah changed tactics and pitched the nose of the airplane up and down to disrupt the assault. The recorder captured the sounds of loud thumps, crashes, shouts, and breaking glasses and plates. At 10:00:03, Jarrah stabilized the airplane.
      ...
     This command will find all the timestamps with "10:" in it, which will allow you to find events during specific times.
-   ```
+     ```
    - `grep " war " technical/911report/chapter-1.txt`
      Output:
      ```
