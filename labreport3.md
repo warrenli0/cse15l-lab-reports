@@ -60,26 +60,28 @@ I changed the assignment in the for loop to write values into the `newArray` fro
 ## Part 2:
 I will be finding uses for the `grep` command.
 1. Basic file search
-   - grep "10:" technical/911report/chapter-1.txt
+   - `grep "10:" technical/911report/chapter-1.txt`
      Output:
      ```
      In response, Jarrah immediately began to roll the airplane to the left and right, attempting to knock the passengers off balance. At 9:58:57, Jarrah told another hijacker in the cockpit to block the door. Jarrah continued to roll the airplane sharply left and right, but the assault continued. At 9:59:52, Jarrah changed tactics and pitched the nose of the airplane up and down to disrupt the assault. The recorder captured the sounds of loud thumps, crashes, shouts, and breaking glasses and plates. At 10:00:03, Jarrah stabilized the airplane.
      ...
+    This command will find all the timestamps with "10:" in it, which will allow you to find events during specific times.
      ```
-   - grep " war " technical/911report/chapter-1.txt
+   - `grep " war " technical/911report/chapter-1.txt`
      Output:
      ```
      The President's motorcade departed at 9:35, and arrived at the airport between 9:42 and 9:45. During the ride the President learned about the attack on the Pentagon. He boarded the aircraft, asked the Secret Service about the safety of his family, and called the Vice President. According to notes of the call, at about 9:45 the President told the Vice President:"Sounds like we have a minor war going on here, I heard about the Pentagon. We're at war . . . somebody's going to pay."
      ```
    This command will find all the lines with occurences of the search term. This is useful if you are trying to find where some keywords are used in a document.
 2. Case insensitive search
-   - grep -i " WaR " technical/911report/chapter-1.txt
+   - `grep -i " WaR " technical/911report/chapter-1.txt`
      Output:
      ```
      The threat of Soviet bombers diminished significantly as the Cold War ended, and the number of NORAD alert sites was reduced from its Cold War high of 26. Some within the Pentagon argued in the 1990s that the alert sites should be eliminated entirely. In an effort to preserve their mission, members of the air defense community advocated the importance of air sovereignty against emerging "asymmetric threats" to the United States: drug smuggling, "non-state and state-sponsored terrorists," and the proliferation of weapons of mass destruction and ballistic missile technology.
      The President's motorcade departed at 9:35, and arrived at the airport between 9:42 and 9:45. During the ride the President learned about the attack on the Pentagon. He boarded the aircraft, asked the Secret Service about the safety of his family, and called the Vice President. According to notes of the call, at about 9:45 the President told the Vice President:"Sounds like we have a minor war going on here, I heard about the Pentagon. We're at war . . . somebody's going to pay."
      ```
-   - grep -i " Pentagon " technical/911report/chapter-1.txt
+   This command allows you to find all occurrences of the word "War" without case sensitivity.
+   - `grep -i " Pentagon " technical/911report/chapter-1.txt`
      Output:
      ```
      At 9:34, Ronald Reagan Washington National Airport advised the Secret Service of an unknown aircraft heading in the direction of the White House. American 77 was then 5 miles west-southwest of the Pentagon and began a 330-degree turn. At the end of the turn, it was descending through 2,200 feet, pointed toward the Pentagon and downtown Washington. The hijacker pilot then advanced the throttles to maximum power and dove toward the Pentagon.
@@ -87,7 +89,7 @@ I will be finding uses for the `grep` command.
      ```
    This command will find all the lines with occurences of the search term, but the `-i` makes it ignore case, which is useful for finding words that are sometimes capitalized but not others.
 3. Recursive search
-   - grep -r "magic" technical/
+   - `grep -r "magic" technical/`
      Output:
      ```
      technical//government/About_LSC/State_Planning_Special_Report.txt:to the field, there is no "magic number" of legal services programs
@@ -98,14 +100,15 @@ I will be finding uses for the `grep` command.
      technical//plos/journal.pbio.0020028.txt:        selectivity of RNAi: like the fabled “magic bullet,” an RNAi sequence seeks out and
      technical//911report/chapter-6.txt:                telling him that they were waiting for the magic words from the CIA and the FBI. Nor
      ```
-   - grep -r "fantasy" technical/
+   The command will find all files that contain the word "magic" which is useful when you are trying to find all files that mnetion a specific topic.
+   - `grep -r "fantasy" technical/`
      Output:
      ```
      technical//government/Post_Rate_Comm/Gleiman_gca2000.txt:story, Denton was leaning into the plate in fantasy baseball camp
      ```
    This command will search through all of the files in the directory for the given search term. This is useful for searching a large set of texts.
 4. Latex as search term
-   - grep "^[A-Z][A-Z]" technical/911report/chapter-1.txt
+   - `grep "^[A-Z][A-Z]" technical/911report/chapter-1.txt`
      Output:
      ```
      INSIDE THE FOUR FLIGHTS
@@ -115,7 +118,8 @@ I will be finding uses for the `grep` command.
      FAA Awareness. One of the last transmissions from United Airlines Flight 175 is, in retrospect, chilling. By 8:40, controllers at the FAA's New York Center were seeking information on American 11. At approximately 8:42, shortly after entering New York Center's airspace, the pilot of United 175 broke in with the following transmission:
      NATIONAL CRISIS MANAGEMENT
      ```
-   - grep "^[0-9]" technical/911report/chapter-1.txt
+   Thie command will find all lines in the file that follow the Latex structure, which can be useful for looking up specific features, such as a phone number.
+   - `grep "^[0-9]" technical/911report/chapter-1.txt`
      Output: empty
    This command will search through the file for strings that match the given latex, which is interesting. This allows for more complex search patterns.
 
