@@ -60,18 +60,20 @@ I changed the assignment in the for loop to write values into the `newArray` fro
 ## Part 2:
 I will be finding uses for the `grep` command.
 1. Basic file search
-   - ```grep "10:" technical/911report/chapter-1.txt```
+   - `grep "10:" technical/911report/chapter-1.txt`
      Output:
+     ```
      In response, Jarrah immediately began to roll the airplane to the left and right, attempting to knock the passengers off balance. At 9:58:57, Jarrah told another hijacker in the cockpit to block the door. Jarrah continued to roll the airplane sharply left and right, but the assault continued. At 9:59:52, Jarrah changed tactics and pitched the nose of the airplane up and down to disrupt the assault. The recorder captured the sounds of loud thumps, crashes, shouts, and breaking glasses and plates. At 10:00:03, Jarrah stabilized the airplane.
      ...
     This command will find all the timestamps with "10:" in it, which will allow you to find events during specific times.
+   ```
    - `grep " war " technical/911report/chapter-1.txt`
      Output:
      ```
      The President's motorcade departed at 9:35, and arrived at the airport between 9:42 and 9:45. During the ride the President learned about the attack on the Pentagon. He boarded the aircraft, asked the Secret Service about the safety of his family, and called the Vice President. According to notes of the call, at about 9:45 the President told the Vice President:"Sounds like we have a minor war going on here, I heard about the Pentagon. We're at war . . . somebody's going to pay."
      ```
    This command will find all the lines with occurences of the search term. This is useful if you are trying to find where some keywords are used in a document.
-2. Case insensitive search
+3. Case insensitive search
    - `grep -i " WaR " technical/911report/chapter-1.txt`
      Output:
      ```
@@ -86,7 +88,7 @@ I will be finding uses for the `grep` command.
      ...
      ```
    This command will find all the lines with occurences of the search term, but the `-i` makes it ignore case, which is useful for finding words that are sometimes capitalized but not others.
-3. Recursive search
+4. Recursive search
    - `grep -r "magic" technical/`
      Output:
      ```
@@ -105,7 +107,7 @@ I will be finding uses for the `grep` command.
      technical//government/Post_Rate_Comm/Gleiman_gca2000.txt:story, Denton was leaning into the plate in fantasy baseball camp
      ```
    This command will search through all of the files in the directory for the given search term. This is useful for searching a large set of texts.
-4. Latex as search term
+5. Latex as search term
    - `grep "^[A-Z][A-Z]" technical/911report/chapter-1.txt`
      Output:
      ```
